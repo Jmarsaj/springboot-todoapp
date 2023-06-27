@@ -1,5 +1,6 @@
 package com.jmarsaj.springboottodoapp.controller
 
+import com.jmarsaj.springboottodoapp.model.TodoEntity
 import com.jmarsaj.springboottodoapp.service.TodoService
 import org.springframework.stereotype.Controller
 import org.springframework.ui.Model
@@ -12,5 +13,17 @@ class TodoController(val todoService: TodoService) {
     fun index(model: Model): String {
         model.addAttribute("todos", todoService.getList())
         return "index"
+    }
+
+    @GetMapping("/")
+    fun root(): String {
+        return "redirect:/todo"
+    }
+
+    @GetMapping("/todo/create")
+    fun createTodoForm(model: Model): String {
+        val todo = TodoEntity()
+        model.addAttribute("todo", todo)
+        return "create-todo"
     }
 }
