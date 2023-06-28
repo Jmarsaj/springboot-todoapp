@@ -5,6 +5,9 @@ import com.jmarsaj.springboottodoapp.service.TodoService
 import org.springframework.stereotype.Controller
 import org.springframework.ui.Model
 import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.ModelAttribute
+import org.springframework.web.bind.annotation.PostMapping
+import java.time.LocalDateTime
 
 @Controller
 class TodoController(val todoService: TodoService) {
@@ -25,5 +28,12 @@ class TodoController(val todoService: TodoService) {
         val todo = TodoEntity()
         model.addAttribute("todo", todo)
         return "create-todo"
+    }
+
+    @PostMapping("/todo")
+    fun saveTodo(@ModelAttribute("todo") todo: TodoEntity): String {
+        todo.createdDatetime = LocalDateTime.now()
+        todoService.saveTodo(todo)
+        return "redirect:/todo"
     }
 }
