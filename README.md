@@ -27,7 +27,7 @@ In Files > Settings > Plugins:
 - Install Database Navigator plugin
 - Install JPA Buddy Navigator plugin
 
-#Database
+# Database
 The pgadmin GUI should be automatically included when installing Postegresql <br>
 To see the table in pgadmin (after running the springboot application),
 - Go to springboot-todoapp > Schemas > Tables
