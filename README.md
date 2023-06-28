@@ -1,5 +1,5 @@
 # ToDo App
-This is a practice Todo App created to familiarise myself with Kotlin and Springboot
+This is a practice Todo App created to familiarise myself with Kotlin and Springboot for the backend, and HTML with Thymeleaf and Bootstrap for the frontend
 
 # Initializing and Setting Up the Environment
 - Install jdk 17 from https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html <br>
