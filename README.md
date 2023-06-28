@@ -1,6 +1,11 @@
 # ToDo App
 This is a practice Todo App created to familiarise myself with Kotlin and Springboot for the backend, and HTML with Thymeleaf and Bootstrap for the frontend
 
+# App Screenshots
+<img src="img/Annotation 2023-06-28 125251.png" width="50%" height="50%">
+<img src="img/Annotation 2023-06-28 125333.png" width="50%" height="50%">
+<img src="img/Annotation 2023-06-28 125415.png" width="50%" height="50%">
+
 # Initializing and Setting Up the Environment
 - Install jdk 17 from https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html <br>
 - Install java and kotlin IDE intellij from https://www.jetbrains.com/idea/ <br>
