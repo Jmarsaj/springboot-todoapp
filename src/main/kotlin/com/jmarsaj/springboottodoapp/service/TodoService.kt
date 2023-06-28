@@ -20,4 +20,8 @@ class TodoService(val todoRepository: TodoEntityRepository) {
     fun getTodoById(id: Long): TodoEntity? {
         return todoRepository.findByIdOrNull(id)
     }
+
+    fun deleteTodo(id: Long) {
+        todoRepository.deleteById(id)
+    }
 }

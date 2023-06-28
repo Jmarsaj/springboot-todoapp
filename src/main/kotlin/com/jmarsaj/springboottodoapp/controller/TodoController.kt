@@ -48,7 +48,7 @@ class TodoController(val todoService: TodoService) {
     fun updateTodo(
         @PathVariable id: Long,
         @ModelAttribute("todo") todo: TodoEntity,
-        model: Model
+        //model: Model
     ): String {
         val existingTodo = todoService.getTodoById(id)
         existingTodo?.let {
@@ -61,6 +61,12 @@ class TodoController(val todoService: TodoService) {
             todoService.saveTodo(it)
         }
 
+        return "redirect:/todo"
+    }
+
+    @GetMapping("/todo/{id}")
+    fun deleteTodo(@PathVariable id: Long): String {
+        todoService.deleteTodo(id)
         return "redirect:/todo"
     }
 }
