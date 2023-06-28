@@ -9,14 +9,13 @@ This is a practice Todo App created to familiarise myself with Kotlin and Spring
 - Install postgresql from https://www.postgresql.org/download/ <br>
 <br>
 <br>
-- Initialize springboot from https://start.spring.io/; and select the following options: <br>
+- Initialize springboot from https://start.spring.io/; and select the following options: <br><br>
 
-<img src="https://github.com/Jmarsaj/springboot-todoapp/assets/80609678/49d9b84f-6e73-4b7d-80eb-1320903263ef" width="50%" height="50%">
+<img src="img/Annotation 2023-06-26 184357.png" width="50%" height="50%">
 
 - And add the following dependencies: <br>
 
-<img src="https://github.com/Jmarsaj/springboot-todoapp/assets/80609678/83b7bde8-41ba-402e-bd94-b91ed7199528" width="50%" height="50%">
-<br>
+<img src="img/Annotation 2023-06-26 184907.png" width="50%" height="50%">
 <br>
 - Generate and extract the files  <br>
 - Then open the extracted folder in IntelliJ
