@@ -6,11 +6,14 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.CommandLineRunner
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
+import org.springframework.stereotype.Component
 
 @SpringBootApplication
 // CommandLineRunner is a simple Spring Boot interface with a run method.
 // Spring Boot will automatically call the run method of all beans implementing
 // this interface after the application context has been loaded
+@Component
+// Added @Component so that it is easy to be included or excluded in tests or runtime
 class SpringbootTodoappApplication : CommandLineRunner {
 
 	// we can inject other beans using @Autowired
