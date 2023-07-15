@@ -13,7 +13,7 @@
   <div class="mt-5 col-6 container justify-content-center card">
     <h2 class="mt-3 text-center">Update Todo</h2>
     <div class="card-body mt-2">
-      <form th:action="@{/todo/{id} (id=${todo.id})}" th:object="${todo}" method="post">
+      <form th:action="@{/todos/{id} (id=${todo.id})}" th:object="${todo}" method="post">
         <div>
           <label for="content">Content</label>
           <input type="text" id="content" th:field="*{content}" class="form-control">

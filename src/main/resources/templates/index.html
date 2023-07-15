@@ -19,7 +19,7 @@
     <h1 class="mt-5">Todo List</h1>
 
     <div class="row col-lg">
-        <a th:href="@{/todo/create}" class="btn btn-primary mt-3 mb-3">Add Todo</a>
+        <a th:href="@{/todos/add}" class="btn btn-primary mt-3 mb-3">Add Todo</a>
     </div>
 
     <table class="table table-bordered table-striped centerTableHead">
@@ -45,9 +45,9 @@
             </td>
 
             <td class="text-center">
-                <a th:href="@{/todo/edit/{id} (id=${item.id})}"
+                <a th:href="@{/todos/{id}/edit (id=${item.id})}"
                    class="btn btn-info btn-sm">Update</a>
-                <a th:href="@{/todo/{id} (id=${item.id})}"
+                <a th:href="@{/todos/{id} (id=${item.id})}"
                    class="btn btn-danger btn-sm"
                    onclick="return confirm('Are you sure you want to delete?')">Delete</a>
             </td>
