@@ -8,21 +8,21 @@ import javax.persistence.*
 // Every instance of an entity represents a row in the table
 @Entity
 @Table(name = "todo_entity")
-class TodoEntity {
+data class TodoEntity (
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
-    var id: Long? = null
+    var id: Long? = null,
 
     @Column(name = "content")
-    var content: String? = null
+    var content: String? = null,
 
     @Column(name = "completed")
-    var completed: Boolean? = false
+    var completed: Boolean? = false,
 
     @Column(name = "created_datetime")
-    var createdDatetime: LocalDateTime? = null
+    var createdDatetime: LocalDateTime? = null,
 
     @Column(name = "completed_datetime")
     var completedDatetime: LocalDateTime? = null
-}
+)
